@@ -3,8 +3,13 @@ import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import cors from "cors";
 import dotenv from 'dotenv';  
-// const path = require('path');
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 import path from "path";
+
 dotenv.config();
 
 const app = express();
