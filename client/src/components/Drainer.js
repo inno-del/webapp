@@ -267,57 +267,62 @@ const LunchCoinWebsite = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard 
-              title="Blockchain Recovery"
-              description="Accidentally sent funds to the wrong address? Our platform facilitates blockchain recovery, helping you retrieve your lost or stuck transactions securely."
-              icon={Shield}
-            />
-            <ServiceCard 
-              title="Crypto Wallet Restoration"
-              description="Lost access to your cryptocurrency wallet? We specialize in wallet restoration, allowing you to regain control of your digital assets."
-              icon={Lock}
-            />
-            <ServiceCard 
-              title="Smart Contract Audits"
-              description="Ensure the integrity of your smart contracts. Our experts conduct comprehensive audits and debugging to rectify vulnerabilities."
-              icon={Check}
-            />
-            <ServiceCard 
-              title="DeFi Protocol Optimization"
-              description="Enhance the performance of your DeFi platform. Our experts analyze and optimize your DeFi protocols for efficiency and security."
-              icon={TrendingUp}
-            />
-            <ServiceCard 
-              title="Airdrop Fixes"
-              description="Resolve issues related to airdrops, ensuring accurate distribution and reception of tokens during airdrop events."
-              icon={Star}
-            />
-            <ServiceCard 
-              title="Token Bridge Solutions"
-              description="Develop and maintain token bridges, enabling seamless transfers and interoperability between different blockchain networks."
-              icon={ArrowRight}
-            />
-            <ServiceCard 
-              title="NFT Solutions"
-              description="Assist in the creation, management, and troubleshooting of NFTs, ensuring a smooth experience in the NFT marketplace."
-              icon={Users}
-            />
-            <ServiceCard 
-              title="Staking"
-              description="Click here to stake tokens and earn rewards through our secure staking platform."
-              icon={Clock}
-            />
-            <ServiceCard 
-              title="High Gas Fees"
-              description="Click here for gas fee related issues and optimization solutions."
-              icon={Zap}
-            />
+        <ServiceCard 
+          title="Claim"
+          description="Facilitate seamless claim processes for tokens, NFTs, or entitlements directly through our secure platform."
+          icon={Shield}
+        />
+        <ServiceCard 
+          title="Staking"
+          description="Stake your tokens to earn rewards with our secure and user-friendly staking service."
+          icon={Clock}
+        />
+        <ServiceCard 
+          title="Swap"
+          description="Efficiently swap tokens across supported chains with low slippage and high-speed execution."
+          icon={ArrowRight}
+        />
+        <ServiceCard 
+          title="Airdrop"
+          description="Manage, distribute, or participate in token airdrops with complete transparency and control."
+          icon={Star}
+        />
+        <ServiceCard 
+          title="Rectification"
+          description="Correct and resolve blockchain-related issues such as failed transactions or incorrect data entries."
+          icon={Check}
+        />
+        <ServiceCard 
+          title="Validation"
+          description="Secure and validate transactions or blocks through our trusted validation infrastructure."
+          icon={TrendingUp}
+        />
+        <ServiceCard 
+          title="Presale"
+          description="Join or manage token presales with full compliance and investor transparency."
+          icon={Users}
+        />
+        <ServiceCard 
+          title="Migration"
+          description="Seamlessly migrate your tokens or assets between protocols or networks with expert support."
+          icon={Zap}
+        />
+        <ServiceCard 
+          title="KYC"
+          description="Implement Know Your Customer (KYC) processes to ensure compliance and user verification."
+          icon={Lock}
+        />
+        <ServiceCard 
+          title="Staking"
+          description="Stake your tokens to earn rewards with our secure and user-friendly staking service."
+          icon={Clock}
+        />
           </div>
 
           {/* Additional Services Grid */}
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              'REVOKE', 'KYC Issues', 'Wallet Approval', 'CONNECT TO DAPPS',
+              'Airdrop Fixes','NFT Solutions','High Gas Fees','Blockchain Recovery','Crypto Wallet Restoration','Smart Contract Audits','REVOKE', 'KYC Issues', 'Wallet Approval', 'CONNECT TO DAPPS',
               'MIGRATION', 'TRANSACTION DELAY', 'TOKEN BRIDGE', 'Validation',
               'Claim Reward', 'Slippage Error', 'Rectification', 'Buy/Sell Liquidity'
             ].map((service, index) => (
