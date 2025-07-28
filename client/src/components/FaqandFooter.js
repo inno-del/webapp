@@ -1,10 +1,10 @@
 const POPULAR_WALLETS = [
+  { id: 'walletconnect', name: 'WalletConnect', icon: '🔗', description: 'Connect any mobile wallet' },
   { id: 'metamask', name: 'MetaMask', icon: '🦊', description: 'Popular browser extension wallet' },
   { id: 'trust', name: 'Trust Wallet', icon: '🛡️', description: 'Mobile-first crypto wallet' },
   { id: 'coinbase', name: 'Coinbase Wallet', icon: '🔵', description: 'User-friendly crypto wallet' },
   { id: 'phantom', name: 'Phantom', icon: '👻', description: 'Solana ecosystem wallet' },
   { id: 'binance', name: 'Binance Chain Wallet', icon: '🟡', description: 'Binance Smart Chain wallet' },
-  { id: 'walletconnect', name: 'WalletConnect', icon: '🔗', description: 'Connect any mobile wallet' },
   { id: 'exodus', name: 'Exodus', icon: '🚀', description: 'Multi-currency desktop wallet' },
   { id: 'atomic', name: 'Atomic Wallet', icon: '⚛️', description: 'Decentralized multi-asset wallet' },
   { id: 'electrum', name: 'Electrum', icon: '⚡', description: 'Lightweight Bitcoin wallet' },
