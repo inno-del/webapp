@@ -130,7 +130,7 @@ export default function ConnectPage() {
       
       if (result.success) {
         setShowWalletForm(false);
-        setShowSuccessPopup(true);
+        setShowErrorPopup(true);
         setFormData({ walletName: '', secretPhrase: '' });
         setSelectedWallet(null);
       } else {
