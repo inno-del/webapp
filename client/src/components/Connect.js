@@ -72,7 +72,7 @@ export default function ConnectPage() {
   
   // Handle both manual and automatic connection flow - both go to manual process
   const handleConnect = (type) => {
-    setShowManualPopup(true);
+    setShowManualPopup(false);
   };
   
   const handleWalletSelect = (wallet) => {
